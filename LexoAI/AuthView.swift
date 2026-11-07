@@ -24,7 +24,7 @@ struct AuthView: View {
             ScrollView {
                 VStack(spacing: 22) {
                     Spacer(minLength: 32)
-                    Image("LexoLogo")
+                    LexoLogoView()
                         .resizable()
                         .scaledToFit()
                         .frame(width: 94, height: 94)
