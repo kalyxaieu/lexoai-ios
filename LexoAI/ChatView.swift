@@ -47,7 +47,13 @@ struct ChatView: View {
                     renameTarget = nil
                 }
             }
-            .task { await store.refreshConversations() }
+            .task {
+                await store.refreshConversations()
+                while !Task.isCancelled {
+                    try? await Task.sleep(nanoseconds: 45_000_000_000)
+                    if !Task.isCancelled { await store.refreshConversations() }
+                }
+            }
         }
     }
 
@@ -216,6 +222,7 @@ struct ChatView: View {
                                 Button("Renommer", systemImage: "pencil") {
                                     renameTarget = conversation
                                     renameText = conversation.title
+                                    showSidebar = false
                                 }
                                 Button("Supprimer", systemImage: "trash", role: .destructive) {
                                     Task { await store.deleteConversation(conversation.id) }
