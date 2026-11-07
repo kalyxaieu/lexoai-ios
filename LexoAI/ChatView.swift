@@ -61,7 +61,7 @@ struct ChatView: View {
                     .background(LexoTheme.surface(colorScheme))
                     .clipShape(RoundedRectangle(cornerRadius: 13))
             }
-            Image("LexoLogo")
+            LexoLogoView()
                 .resizable().scaledToFit()
                 .frame(width: 32, height: 32)
                 .clipShape(RoundedRectangle(cornerRadius: 9))
@@ -90,7 +90,7 @@ struct ChatView: View {
     private var welcome: some View {
         VStack(spacing: 16) {
             Spacer()
-            Image("LexoLogo").resizable().scaledToFit().frame(width: 76, height: 76)
+            LexoLogoView().resizable().scaledToFit().frame(width: 76, height: 76)
                 .clipShape(RoundedRectangle(cornerRadius: 22))
             Text("Comment puis-je t'aider ?")
                 .font(.system(size: 25, weight: .semibold, design: .rounded))
@@ -163,7 +163,7 @@ struct ChatView: View {
         NavigationStack {
             VStack(spacing: 14) {
                 HStack(spacing: 12) {
-                    Image("LexoLogo").resizable().scaledToFit().frame(width: 46, height: 46)
+                    LexoLogoView().resizable().scaledToFit().frame(width: 46, height: 46)
                         .clipShape(RoundedRectangle(cornerRadius: 13))
                     VStack(alignment: .leading, spacing: 2) {
                         Text("Lexo AI").font(.title3.bold())
