@@ -6,6 +6,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1000000000000000000000C /* LexoLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000D /* LexoLogoView.swift */; };
 		A10000000000000000000001 /* LexoAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* LexoAIApp.swift */; };
 		A10000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* ContentView.swift */; };
 		A10000000000000000000003 /* SupabaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* SupabaseConfig.swift */; };
@@ -32,6 +33,7 @@
 		B1000000000000000000000A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B1000000000000000000000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1000000000000000000000C /* LexoAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LexoAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1000000000000000000000D /* LexoLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexoLogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				B10000000000000000000008 /* AuthView.swift */,
 				B10000000000000000000009 /* ChatView.swift */,
 				B1000000000000000000000A /* SettingsView.swift */,
+				B1000000000000000000000D /* LexoLogoView.swift */,
 				B1000000000000000000000B /* Info.plist */,
 			);
 		};
@@ -129,6 +132,7 @@
 				A10000000000000000000008 /* AuthView.swift in Sources */,
 				A10000000000000000000009 /* ChatView.swift in Sources */,
 				A1000000000000000000000A /* SettingsView.swift in Sources */,
+				A1000000000000000000000C /* LexoLogoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
