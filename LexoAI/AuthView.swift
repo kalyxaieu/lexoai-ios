@@ -160,6 +160,13 @@ struct AuthView: View {
                     .overlay(RoundedRectangle(cornerRadius: 27).stroke(.primary.opacity(0.06)))
                     .shadow(color: .black.opacity(colorScheme == .dark ? 0.18 : 0.06), radius: 24, y: 10)
 
+                    HStack(spacing: 14) {
+                        Link("Conditions", destination: URL(string: "https://kalyxai.eu/conditions-utilisation")!)
+                        Link("Confidentialité", destination: URL(string: "https://kalyxai.eu/confidentialite")!)
+                    }
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+
                     Label("Connexion sécurisée par Kalyx AI", systemImage: "lock.shield")
                         .font(.caption)
                         .foregroundStyle(.secondary)
