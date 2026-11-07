@@ -6,7 +6,7 @@ struct ChatView: View {
     @Environment(\.colorScheme) private var colorScheme
     @State private var draft = ""
     @State private var showSidebar = false
-    @State private var showSettings = false
+    @State private var historySearch = ""
     @State private var renameTarget: Conversation?
     @State private var renameText = ""
     @FocusState private var composerFocused: Bool
@@ -34,7 +34,6 @@ struct ChatView: View {
             .background(LexoTheme.background(colorScheme))
             .toolbar(.hidden, for: .navigationBar)
             .sheet(isPresented: $showSidebar) { sidebar }
-            .sheet(isPresented: $showSettings) { SettingsView(app: app) }
             .alert("Renommer la conversation", isPresented: Binding(
                 get: { renameTarget != nil },
                 set: { if !$0 { renameTarget = nil } }
@@ -194,7 +193,9 @@ struct ChatView: View {
                     }
                 }
                 List {
-                    ForEach(store.conversations) { conversation in
+                    ForEach(store.conversations.filter {
+                        historySearch.isEmpty || $0.title.localizedCaseInsensitiveContains(historySearch)
+                    }) { conversation in
                         HStack(spacing: 8) {
                             Button {
                                 Task {
@@ -231,14 +232,18 @@ struct ChatView: View {
                     }
                 }
                 .listStyle(.plain)
+                .searchable(text: $historySearch, prompt: "Rechercher une conversation")
 
-                Button { showSettings = true; showSidebar = false } label: {
+                NavigationLink {
+                    SettingsView(app: app)
+                } label: {
                     Label("Paramètres", systemImage: "gearshape")
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(12)
                         .background(LexoTheme.surface(colorScheme))
                         .clipShape(RoundedRectangle(cornerRadius: 13))
                 }
+                .buttonStyle(.plain)
                 Button(role: .destructive) {
                     Task { await app.signOut() }
                 } label: {
