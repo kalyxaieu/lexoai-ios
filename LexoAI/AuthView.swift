@@ -25,8 +25,6 @@ struct AuthView: View {
                 VStack(spacing: 22) {
                     Spacer(minLength: 32)
                     LexoLogoView()
-                        .resizable()
-                        .scaledToFit()
                         .frame(width: 94, height: 94)
                         .clipShape(RoundedRectangle(cornerRadius: 25))
                         .shadow(color: LexoTheme.violet.opacity(0.22), radius: 22, y: 8)
