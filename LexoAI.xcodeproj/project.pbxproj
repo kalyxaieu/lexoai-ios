@@ -1,0 +1,206 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* LexoAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* LexoAIApp.swift */; };
+		A10000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* ContentView.swift */; };
+		A10000000000000000000003 /* SupabaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* SupabaseConfig.swift */; };
+		A10000000000000000000004 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* AppModel.swift */; };
+		A10000000000000000000005 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* ChatModels.swift */; };
+		A10000000000000000000006 /* ChatStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* ChatStore.swift */; };
+		A10000000000000000000007 /* LexoTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* LexoTheme.swift */; };
+		A10000000000000000000008 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000008 /* AuthView.swift */; };
+		A10000000000000000000009 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000009 /* ChatView.swift */; };
+		A1000000000000000000000A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000A /* SettingsView.swift */; };
+		A1000000000000000000000B /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = C10000000000000000000001 /* Supabase */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10000000000000000000001 /* LexoAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexoAIApp.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* SupabaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseConfig.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* ChatStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000007 /* LexoTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexoTheme.swift; sourceTree = "<group>"; };
+		B10000000000000000000008 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		B10000000000000000000009 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		B1000000000000000000000A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B1000000000000000000000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1000000000000000000000C /* LexoAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LexoAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D10000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (A1000000000000000000000B /* Supabase in Frameworks */, );
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				E10000000000000000000002 /* LexoAI */,
+				B1000000000000000000000C /* LexoAI.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E10000000000000000000002 /* LexoAI */ = {
+			isa = PBXGroup;
+			path = LexoAI;
+			sourceTree = "<group>";
+			children = (
+				B10000000000000000000001 /* LexoAIApp.swift */,
+				B10000000000000000000002 /* ContentView.swift */,
+				B10000000000000000000003 /* SupabaseConfig.swift */,
+				B10000000000000000000004 /* AppModel.swift */,
+				B10000000000000000000005 /* ChatModels.swift */,
+				B10000000000000000000006 /* ChatStore.swift */,
+				B10000000000000000000007 /* LexoTheme.swift */,
+				B10000000000000000000008 /* AuthView.swift */,
+				B10000000000000000000009 /* ChatView.swift */,
+				B1000000000000000000000A /* SettingsView.swift */,
+				B1000000000000000000000B /* Info.plist */,
+			);
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F10000000000000000000001 /* LexoAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = G10000000000000000000002 /* Build configuration list for PBXNativeTarget "LexoAI" */;
+			buildPhases = (
+				H10000000000000000000001 /* Sources */,
+				D10000000000000000000001 /* Frameworks */,
+				I10000000000000000000001 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = LexoAI;
+			packageProductDependencies = (C10000000000000000000001 /* Supabase */, );
+			productName = LexoAI;
+			productReference = B1000000000000000000000C /* LexoAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		J10000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = { F10000000000000000000001 = {CreatedOnToolsVersion = 16.0; }; };
+			};
+			buildConfigurationList = G10000000000000000000001 /* Build configuration list for PBXProject */;
+			compatibilityVersion = "Xcode 15.0";
+			mainGroup = E10000000000000000000001;
+			packageReferences = (K10000000000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */, );
+			productRefGroup = E10000000000000000000001;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (F10000000000000000000001 /* LexoAI */, );
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		I10000000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		H10000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* LexoAIApp.swift in Sources */,
+				A10000000000000000000002 /* ContentView.swift in Sources */,
+				A10000000000000000000003 /* SupabaseConfig.swift in Sources */,
+				A10000000000000000000004 /* AppModel.swift in Sources */,
+				A10000000000000000000005 /* ChatModels.swift in Sources */,
+				A10000000000000000000006 /* ChatStore.swift in Sources */,
+				A10000000000000000000007 /* LexoTheme.swift in Sources */,
+				A10000000000000000000008 /* AuthView.swift in Sources */,
+				A10000000000000000000009 /* ChatView.swift in Sources */,
+				A1000000000000000000000A /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		L10000000000000000000001 /* Debug project */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = { CLANG_ENABLE_MODULES = YES; SDKROOT = iphoneos; };
+			name = Debug;
+		};
+		L10000000000000000000002 /* Release project */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = { CLANG_ENABLE_MODULES = YES; SDKROOT = iphoneos; };
+			name = Release;
+		};
+		L10000000000000000000003 /* Debug target */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LexoAI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.kalyxai.lexo.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		L10000000000000000000004 /* Release target */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LexoAI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.kalyxai.lexo.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		G10000000000000000000001 /* Build configuration list for PBXProject */ = {isa = XCConfigurationList; buildConfigurations = (L10000000000000000000001, L10000000000000000000002, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		G10000000000000000000002 /* Build configuration list for PBXNativeTarget "LexoAI" */ = {isa = XCConfigurationList; buildConfigurations = (L10000000000000000000003, L10000000000000000000004, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		K10000000000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {kind = upToNextMajorVersion; minimumVersion = 2.0.0; };
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C10000000000000000000001 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = K10000000000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = J10000000000000000000001 /* Project object */;
+}
