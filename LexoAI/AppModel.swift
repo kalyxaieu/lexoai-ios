@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 import Supabase
 
 @MainActor
@@ -90,15 +91,7 @@ final class AppModel: ObservableObject {
     }
 
     func signInWithGoogle() async {
-        authError = nil
-        isBusy = true
-        defer { isBusy = false }
-        do {
-            _ = try await client.auth.signInWithOAuth(provider: .google)
-            await restoreSession()
-        } catch {
-            authError = error.localizedDescription
-        }
+        authError = "La connexion Google native nécessite un client OAuth iOS dédié pour eu.kalyxai.lexo.ios. La connexion par e-mail est déjà reliée à Supabase."
     }
 
     func signOut() async {
